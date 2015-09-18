@@ -14,7 +14,10 @@ Example usage:
 """
 
 import sys
+import os
 import time
+
+sys.path.append(os.getcwd())  # noqa
 
 from mirakuru.compat import HTTPServer, BaseHTTPRequestHandler
 from tests.signals import block_signals
